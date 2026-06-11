@@ -58,13 +58,16 @@
           <div class="control-grid">
             <label>
               <span>Sort Transactions</span>
-              <select id="sortOption">
-                <option value="latest">Latest Added</option>
-                <option value="oldest">Oldest Added</option>
-                <option value="amount-desc">Amount: High to Low</option>
-                <option value="amount-asc">Amount: Low to High</option>
-                <option value="category-asc">Category: A to Z</option>
-              </select>
+              <div class="field-shell select-shell">
+                <select id="sortOption">
+                  <option value="latest">Latest Added</option>
+                  <option value="oldest">Oldest Added</option>
+                  <option value="amount-desc">Amount: High to Low</option>
+                  <option value="amount-asc">Amount: Low to High</option>
+                  <option value="category-asc">Category: A to Z</option>
+                </select>
+                <span class="material-symbols-outlined field-icon" aria-hidden="true">expand_more</span>
+              </div>
             </label>
 
             <label>
@@ -99,18 +102,24 @@
 
               <label>
                 <span>Category</span>
-                <select id="category" name="category" required>
-                  <option value="">Select category</option>
-                  <option value="Food">Food</option>
-                  <option value="Transport">Transport</option>
-                  <option value="Fun">Fun</option>
-                </select>
+                <div class="field-shell select-shell">
+                  <select id="category" name="category" required>
+                    <option value="">Select category</option>
+                    <option value="Food">Food</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Fun">Fun</option>
+                  </select>
+                  <span class="material-symbols-outlined field-icon" aria-hidden="true">expand_more</span>
+                </div>
               </label>
             </div>
 
             <label>
               <span>Date</span>
-              <input id="transactionDate" name="transactionDate" type="date" required />
+              <div class="field-shell date-shell">
+                <input id="transactionDate" name="transactionDate" type="date" required />
+                <span class="material-symbols-outlined field-icon" aria-hidden="true">calendar_month</span>
+              </div>
             </label>
 
             <button type="submit" class="primary-button">Save Transaction</button>
