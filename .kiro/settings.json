@@ -1,0 +1,36 @@
+{
+  "workspace": {
+    "name": "expense-budget-visualizer",
+    "type": "static-web-app",
+    "entry": "index.html"
+  },
+  "agent": {
+    "instructionFile": ".kiro/agent.md",
+    "contextFiles": [
+      ".kiro/context/product.md",
+      ".kiro/context/architecture.md",
+      ".kiro/context/repository-map.md",
+      "Copy of Brief_SEFC_Expense & Budget Visualizer.md"
+    ]
+  },
+  "conventions": {
+    "frontend": "vanilla-js",
+    "styles": [
+      "css/style.css"
+    ],
+    "scripts": [
+      "js/script.js"
+    ],
+    "storage": "localStorage"
+  },
+  "checks": {
+    "manual": [
+      "Open index.html in a browser",
+      "Add a transaction",
+      "Delete a transaction",
+      "Refresh and verify persistence",
+      "Verify chart updates",
+      "Verify theme toggle"
+    ]
+  }
+}

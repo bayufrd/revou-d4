@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "tool": "kiro",
+  "workspace": "expense-budget-visualizer",
+  "files": {
+    "agent": ".kiro/agent.md",
+    "settings": ".kiro/settings.json",
+    "specs": [
+      ".kiro/specs/expense-budget-visualizer.md"
+    ],
+    "prompts": [
+      ".kiro/prompts/implement-feature.md",
+      ".kiro/prompts/review-change.md",
+      ".kiro/prompts/release-checklist.md"
+    ],
+    "workflows": [
+      ".kiro/workflows/shipping.md",
+      ".kiro/workflows/manual-qa.md"
+    ]
+  }
+}
